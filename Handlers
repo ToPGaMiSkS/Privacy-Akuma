@@ -1,0 +1,60 @@
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Slash Commands ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+const { SlashCommandBuilder } = require("@discordjs/builders")
+const { MessageEmbed } = require("discord.js")
+const Discord = require("discord.js")
+
+module.exports = {
+  data: new SlashCommandBuilder()
+  .setName("")
+  .setDescription(""),
+
+  async run(client, interaction){
+
+    const perms = interaction.user.id === "835232480931348531" || interaction.user.id === "979884922468712550"
+    
+    if (perms) return interaction.reply({ content: "Tú no puedes interactuar conmigo.", ephemeral: true })
+
+  }
+}
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Slash Commands ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Embeds ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  const nombre = new Discord.MessageEmbed()
+  .setAuthor("")
+  .setTitle("") 
+  .setDescription("")
+  .setColor("")
+  .setImage("")
+  .setThumbnail("")
+  .setFooter("")
+  .setTimestamp()
+  .addField("", "")
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Embeds ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Modals ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+  const modal = new Discord.Modal()
+  .setTitle("")
+  .setCustomId("")
+
+  const reseña = new Discord.TextInputComponent()
+  .setCustomId("")
+  .setLabel("")
+  .setPlaceholder("")
+  .setStyle("")
+  .setRequired();
+
+  const row1 = new Discord.MessageActionRow()
+  .addComponents();
+
+  modal.addComponents(row1);
+
+  await interaction.showModal(modal);
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Modals ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬

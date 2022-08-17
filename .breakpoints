@@ -1,0 +1,34 @@
+{
+  "files": {
+    "index.js": [
+      {
+        "id": "ea48c792-82a3-4f6f-a00b-1ab8021dc2b0",
+        "line": 1,
+        "version": 745,
+        "index": 0
+      },
+      {
+        "id": "c8483913-a6a1-44c2-adcc-719213b40e3c",
+        "line": 1,
+        "version": 745,
+        "index": 0
+      }
+    ],
+    "slashcmd/Moderación/warns.js": [
+      {
+        "id": "cebf9bc2-e755-479c-9d69-7e5887502eca",
+        "line": 31,
+        "version": 388,
+        "index": 1491
+      }
+    ],
+    "slashcmd/📚 Información/help.js": [
+      {
+        "id": "a470445c-feae-4f77-a79e-a6ae445a0a87",
+        "line": 47,
+        "version": 498,
+        "index": 1303
+      }
+    ]
+  }
+}
